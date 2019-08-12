@@ -54,7 +54,7 @@ The Git flow can be broken down into steps as follows:
 
 ## In Class Activity I
 
-- Creating a movie (up to completing step 2: Publish)
+- [Creating a movie (up to completing step 2: Publish)](MovieActivity.md)
 
 ## Collaborating with GitHub
 
@@ -92,7 +92,7 @@ There are 3 ways to create a repository. One is by creating it on our own, to st
 
 ## In Class Activity II
 
-- Creating a movie (up to the end)
+- [Creating a movie (up to the end)](MovieActivity.md)
 
 ## Commit messages
 
