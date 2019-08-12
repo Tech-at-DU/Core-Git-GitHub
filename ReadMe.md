@@ -81,7 +81,7 @@ The GitHub flow has six steps:
 
 **Clone vs Fork**
 
-There are 3 ways to create a repository. One is by creating it on our own, to start a new project. But if we want to use an already existing project we can go in two directions: Clone or Fork.
+There are 3 ways to create a repository. One is by creating it on our own, to start a new project. But if we want to use an already existing project we can go in two directions: *Clone* or *Fork*.
 
 - A fork is a copy of a repository that allows you to freely experiment with changes without affecting the original project.
 - A connection exists between your fork and the original repository itself.
@@ -98,7 +98,8 @@ There are 3 ways to create a repository. One is by creating it on our own, to st
 
 The git commit subject line should always be able to complete the following sentence:
 
-**If applied, this commit will <your subject line here>**
+**If applied, this commit will** *your subject line here*
+
 *Example: Add authentication to login.*
 
 Guidelines:
