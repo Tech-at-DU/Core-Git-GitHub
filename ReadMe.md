@@ -1,65 +1,118 @@
-# Core: Git & GitHub
+# Git/Github
 
-_How developers collaborate, share code, and find projects_
+## Learning Objectives
 
-Git and GitHub are essential version control tools for engineers because they allow you to:
-- Save and document edits (Git)
-- Review previous versions (Git)
-- Backup your code remotely (GitHub)
-- Share and discover code (GitHub)
+1. Understand how to take a real project and integrate it with Git/GitHub.
+1. Create well-crafted commit messages.
+1. Practice basic pull requests and resolve basic merge conflicts.
 
-## Part 1: Init, Clone, Add, Commit, Push & Pull
 
-**Let's make a movie!**
+## Initial Exercise
 
-### Step 1
+Ever heard of version control? Have you used it?
 
-As **Screenwriter** you have big ideas, and want to cast the best A-list actors to play the roles in your story.
+Take a minute to write down what you know it's about or what you imagine it's related to if you're not familiar with the term.
 
-You have to make the movie. You need to list the character in your screen play.
-(List 5 character who will appear in your screenplay)
+Share your answer and listen to other's comments. Then learn about what it is and why it's important.
 
-For example:
-The Howling Moon
-- The Heiress: Scarlet Johansson
-- Col. Mustard: George Clooney
-- The Step Daughter: Lady Gaga
-- The Handyman: Brad Pitt
-- The Butler: Danny DeVito
+## Version Control
 
-### Step 2
+A version control system is basically a tracker of the changes made on a project by a group of people who work collaboratively.
 
-You got big plans you want to make the most awesome movie since The Room.
-You are determined to make this big, to go big you need big names!
+As any project grows and evolves, the confidence that any version can be recovered helps teams run tests, fix bugs and add new code.
 
-Director collaborates by editing the cast to preferred actors famous people.
+Developers can review project history to find out:
 
-Now you are the Producer for a Screenwriter. As **Producer** you have to keep an eye on
-the budget. You'll probably have to cast Make School students and staff as these are the
-only people you can convince to play the roles for the money you have available.
+- Which changes were made?
+- Who made the changes?
+- When were the changes made?
+- Why were changes needed?
 
-### Step 3
+Git is an example of a distributed version control system, the most popular in the world as more than 70% of developers use it. Git allows full access to every file, branch, and iteration of a project, and allows every user access to a full and self-contained history of all changes.
 
-Turns out these famous people are not available and the cast must be reverted.
+No matter where users are in the world, they can collaborate to projects using git at any given time, from anywhere.
 
-## Git Workflow
+**About Github**
 
-![Git-Workflow](Git-Workflow.png "Git Workflow")
+GitHub is a Git hosting repository that provides developers with tools to ship better code:
+- command line features
+- issues (threaded discussions)
+- pull requests
+- code review
 
-## Part 2: Fork, Pull Request & Merge Changes
+**The Workflow**
 
-### Step 1: Fork & Edit
+The Git flow can be broken down into steps as follows:
 
-Make a team of 2 or 3 people. You and a partner(s) are going to help another team of screenwriters improve their movie. Find their repository on GitHub and *fork* it. Once that's done, each of you *clone* **the forked repo** on your computer (not the other team's source repo). Now each of you edit their movie synopsis, characters list, and casting assignments. Add and commit your changes, and then push your work to your fork on GitHub.
+1. Create or clone a repository.
+1. Make all the changes needed to your files.
+1. Add the files to the staging area, what you want to update in the repo.
+1. Commit the files and add a message.
+1. Push the changes to the repo.
 
-### Step 2: Pull Request
+[Source](https://guides.github.com/introduction/git-handbook/)
 
-Now that you've edited *your fork* of the movie repo, you need to *open a pull request* to share your improvements and have them merge into the original team's source repo.
+## In Class Activity I
 
-### Step 3: Review Changes
+- Creating a movie (up to completing step 2: Publish)
 
-By now, another team should have already opened a few pull requests on your team's movie repo to improve your movie. Review the proposed changes and accept them into your source repository. You may run into *merge conflicts* while doing this. Work with your partner to resolve any conflicts to accept the changes and close the pull requests. Finally, you should *pull* those changes to your computer's local clone of your repo.
+## Collaborating with GitHub
 
-## GitHub Workflow
+The great thing about Git is the ability to collaborate to a project. To do this we can follow the GitHub flow which looks similar to what you know already but with additional steps:
 
-![GitHub-Workflow](GitHub-Workflow.png "GitHub Workflow")
+The GitHub flow has six steps:
+
+1. **Create a branch:** Topic branches allow teams to contribute to many parallel efforts.
+1. **Add commits:** Snapshots of development efforts within a branch create safe, revertible points in the project’s history.
+1. **Open a pull request:** Pull requests publicize a project’s ongoing efforts and set the tone for a transparent development process.
+1. **Discuss and review code:** Teams participate in code reviews by commenting, testing, and reviewing open pull requests. Code review is at the core of an open and participatory culture.
+1. **Merge:** Upon clicking merge, GitHub automatically performs the equivalent of a local ‘git merge’ operation. GitHub also keeps the entire branch development history on the merged pull request.
+1. **Deploy:** Teams can choose the best release cycles or incorporate continuous integration tools and operate with the assurance that code on the deployment branch has gone through a robust workflow.
+
+[Source](https://guides.github.com/introduction/flow/)
+
+**About branches**
+- A branch has a unique set of code changes.
+- Use a branch to isolate development work without affecting other branches in the repository.
+- Each repository has one default branch (master), and can have multiple other branches.
+- You can merge a branch into another branch using a pull request.
+
+[Source](https://help.github.com/en/articles/about-branches)
+
+**Clone vs Fork**
+
+There are 3 ways to create a repository. One is by creating it on our own, to start a new project. But if we want to use an already existing project we can go in two directions: Clone or Fork.
+
+- A fork is a copy of a repository that allows you to freely experiment with changes without affecting the original project.
+- A connection exists between your fork and the original repository itself.
+- If you clone a repo you won't be able to pull down changes from the original repository and if the project is owned by someone else you won't be able to contribute back (unless you are a collaborator)
+
+[Source](https://github.community/t5/Support-Protips/The-difference-between-forking-and-cloning-a-repository/ba-p/1372)
+
+
+## In Class Activity II
+
+- Creating a movie (up to the end)
+
+## Commit messages
+
+The git commit subject line should always be able to complete the following sentence:
+
+**If applied, this commit will <your subject line here>**
+*Example: Add authentication to login.*
+
+Guidelines:
+- Separate subject from body with a blank line
+- Use imperative mood in the subject
+- Wrap lines at ~70 characters
+- Start with capital letters
+
+[Source](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53)
+
+## Additional Resources
+
+1. [Slides](https://docs.google.com/presentation/d/17NWgjqiLIGECLP456hGPU_f_QJNP38dOuSz3IU-R--I/edit?usp=sharing)
+1. [MS Branching tutorial](http://make.sc/git-branching)
+1. [Info in commit messages](https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages)
+1. [More sources on resolving merge conflicts](https://codeforphilly.github.io/decentralized-data/tutorials/actually-using-git/lessons/conflicting-branches/)
+
