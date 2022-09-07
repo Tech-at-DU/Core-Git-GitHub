@@ -36,7 +36,7 @@ You need to publish your work before you can help. Upload your work to GitHub.
 A Director collaborates by editing the cast to preferred actors famous people.
 
 As **Director** you have to keep an eye on
-the budget. You'll probably have to cast Make School students and staff as these are the
+the budget. You'll probably have to cast other students and staff as these are the
 only people you can convince to play the roles for the money you have available.
 
 You and a partner(s) are going to help another team of screenwriters improve their movie based on the budget. Find their repository on GitHub and *fork* it. Once that's done, each of you *clone* **the forked repo** on your computer (not the other team's source repo). Now each of you edit their movie synopsis, characters list, and casting assignments. Add and commit your changes, and then push your work to your fork on GitHub.
